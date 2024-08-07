@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://ge36gnofubuy"]
+
+[ext_resource type="Texture2D" uid="uid://r15u3jikrvg8" path="res://scenes/backgrounds/bg_1/plx-1.png" id="1_hojgm"]
+[ext_resource type="Texture2D" uid="uid://cywi7g51uwdgk" path="res://scenes/backgrounds/bg_1/plx-2.png" id="2_4ed7n"]
+[ext_resource type="Texture2D" uid="uid://n1f2urcrdxyt" path="res://scenes/backgrounds/bg_1/plx-3.png" id="3_0oltn"]
+[ext_resource type="Texture2D" uid="uid://c2ag8qr6x1bcd" path="res://scenes/backgrounds/bg_1/plx-4.png" id="4_0e8ah"]
+[ext_resource type="Texture2D" uid="uid://c1vvv72go5but" path="res://scenes/backgrounds/bg_1/plx-5.png" id="5_d1dq5"]
+
+[node name="Background" type="Node2D"]
+texture_filter = 1
+scale = Vector2(6, 6)
+
+[node name="Layer 1" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(0, 71.25)
+scale = Vector2(1.2, 1.77)
+texture = ExtResource("1_hojgm")
+region_enabled = true
+region_rect = Rect2(0, 0, 100000, 250)
+
+[node name="Layer 2" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(0, 71.3333)
+scale = Vector2(1.2, 1.77067)
+texture = ExtResource("2_4ed7n")
+region_enabled = true
+region_rect = Rect2(0, 0, 100000, 250)
+
+[node name="Layer 3" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(0, 71.25)
+scale = Vector2(1.2, 1.77)
+texture = ExtResource("3_0oltn")
+region_enabled = true
+region_rect = Rect2(0, 0, 100000, 250)
+
+[node name="Layer 4" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(0, 71.9167)
+scale = Vector2(1.2, 1.77533)
+texture = ExtResource("4_0e8ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 100000, 250)
+
+[node name="Layer 5" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(0, 67.75)
+scale = Vector2(1.2, 1.72885)
+texture = ExtResource("5_d1dq5")
+region_enabled = true
+region_rect = Rect2(0, 0, 100000, 260)
