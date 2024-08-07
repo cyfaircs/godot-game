@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://di576shoxhkex"]
+
+[ext_resource type="Script" path="res://scripts/monkey.gd" id="1_qmbni"]
+[ext_resource type="Texture2D" uid="uid://q1njjo328ifi" path="res://Icons/jump-right.png" id="2_5d8na"]
+[ext_resource type="Texture2D" uid="uid://ss2w7gmi5oqm" path="res://Icons/Untitled.jpeg" id="2_gqwvk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qor4e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5d8na")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gqwvk")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_02n5h"]
+size = Vector2(218, 217)
+
+[node name="Monkey" type="CharacterBody2D"]
+position = Vector2(24, -14)
+script = ExtResource("1_qmbni")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
+sprite_frames = SubResource("SpriteFrames_qor4e")
+animation = &"Jump"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1.25)
+scale = Vector2(0.4, 0.4)
+shape = SubResource("RectangleShape2D_02n5h")

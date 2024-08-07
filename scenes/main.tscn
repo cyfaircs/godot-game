@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx224gbewhvhn"]
+
+[ext_resource type="PackedScene" uid="uid://di576shoxhkex" path="res://scenes/monkey.tscn" id="1_sy5dr"]
+[ext_resource type="PackedScene" uid="uid://bt62yxpfu8272" path="res://scenes/platform.tscn" id="2_igk8m"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Monkey" parent="." instance=ExtResource("1_sy5dr")]
+position = Vector2(602, 189)
+
+[node name="Platform" parent="." instance=ExtResource("2_igk8m")]
+position = Vector2(602, 273)
+
+[node name="Platform2" parent="." instance=ExtResource("2_igk8m")]
+position = Vector2(488, 277)
+
+[node name="Platform3" parent="." instance=ExtResource("2_igk8m")]
+position = Vector2(663, 274)
+
+[node name="Platform4" parent="." instance=ExtResource("2_igk8m")]
+position = Vector2(546, 273)
+
+[node name="Platform5" parent="." instance=ExtResource("2_igk8m")]
+position = Vector2(725, 270)
