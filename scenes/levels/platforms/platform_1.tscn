@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://y1pdu5hblvwb"]
+
+[ext_resource type="Texture2D" uid="uid://dgjtjr33ypgx6" path="res://scenes/levels/platforms/Platforms.png" id="1_ibmnk"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mn7rd"]
+texture = ExtResource("1_ibmnk")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:2/0/physics_layer_0/angular_velocity = 0.0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_6d4ce"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_mn7rd")
+
+[node name="Platform 1" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+tile_set = SubResource("TileSet_6d4ce")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 0, 2, 1, 65536, 2, 2, 65536, 2, 3, 65536, 2, 4, 131072, 2, 65540, 0, 2, 65541, 65536, 2, 65542, 65536, 2, 65543, 65536, 2, 65544, 65536, 2, 65545, 65536, 2, 65546, 131072, 2, 10, 0, 2, 11, 65536, 2, 12, 65536, 2, 13, 65536, 2, 14, 65536, 2, 15, 131072, 2, 23, 0, 2, 24, 65536, 2, 25, 65536, 2, 26, 65536, 2, 27, 131072, 2, -65502, 0, 2, -65501, 65536, 2, -65500, 65536, 2, -65499, 65536, 2, -65498, 65536, 2, -65497, 131072, 2, -196563, 0, 2, -196562, 65536, 2, -196561, 65536, 2, -196560, 65536, 2, -196559, 65536, 2, -196558, 65536, 2, -196557, 131072, 2, 65596, 0, 2, 65597, 65536, 2, 65598, 65536, 2, 65599, 65536, 2, 65600, 65536, 2, 65601, 65536, 2, 74, 0, 2, 75, 65536, 2, 76, 65536, 2, 77, 65536, 2, 78, 131072, 2)
